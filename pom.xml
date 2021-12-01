@@ -76,6 +76,7 @@ under the License.
     <groovy-artifactId>groovy-all</groovy-artifactId>
     <groovy-version>3.0.9</groovy-version>
     <surefire.version>2.22.2</surefire.version>
+    <mavenPluginToolsVersion>3.6.2</mavenPluginToolsVersion>
     <project.build.outputTimestamp>2021-02-14T00:04:14Z</project.build.outputTimestamp>
   </properties>
 
@@ -101,7 +102,7 @@ under the License.
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
       <version>${mavenVersion}</version>
-      <scope>compile</scope> <!-- set to provided once MPLUGIN-372 fixed -->
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -342,6 +343,10 @@ under the License.
         <plugin>
           <artifactId>maven-invoker-plugin</artifactId>
           <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.3.1</version>
         </plugin>
       </plugins>
     </pluginManagement>
