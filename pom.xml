@@ -28,7 +28,7 @@ under the License.
   </parent>
 
   <artifactId>maven-invoker-plugin</artifactId>
-  <version>3.5.1-SNAPSHOT</version>
+  <version>3.6.0-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>Apache Maven Invoker Plugin</name>
@@ -150,25 +150,19 @@ under the License.
     <dependency>
       <groupId>org.apache.maven.reporting</groupId>
       <artifactId>maven-reporting-api</artifactId>
-      <version>3.1.1</version>
+      <version>4.0.0-M5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.reporting</groupId>
       <artifactId>maven-reporting-impl</artifactId>
-      <version>3.2.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>org.codehaus.plexus</groupId>
-          <artifactId>plexus-container-default</artifactId>
-        </exclusion>
-      </exclusions>
+      <version>4.0.0-M5</version>
     </dependency>
 
     <!-- doxia -->
     <dependency>
       <groupId>org.apache.maven.doxia</groupId>
       <artifactId>doxia-sink-api</artifactId>
-      <version>1.12.0</version>
+      <version>2.0.0-M6</version>
     </dependency>
 
     <dependency>
@@ -374,16 +368,16 @@ under the License.
         <!-- plugins versions used in IT tests -->
         <antrunPluginVersion>3.1.0</antrunPluginVersion>
         <cleanPluginVersion>3.2.0</cleanPluginVersion>
-        <compilerPluginVersion>3.10.1</compilerPluginVersion>
-        <enforcerPluginVersion>3.1.0</enforcerPluginVersion>
+        <compilerPluginVersion>3.11.0</compilerPluginVersion>
+        <enforcerPluginVersion>3.2.1</enforcerPluginVersion>
         <helpPluginVersion>3.3.0</helpPluginVersion>
-        <installPluginVersion>3.1.0</installPluginVersion>
+        <installPluginVersion>3.1.1</installPluginVersion>
         <jarPluginVersion>3.3.0</jarPluginVersion>
-        <pluginPluginVersion>3.7.0</pluginPluginVersion>
-        <resourcesPluginVersion>3.3.0</resourcesPluginVersion>
-        <sitePluginVersion>3.12.1</sitePluginVersion>
+        <pluginPluginVersion>3.8.1</pluginPluginVersion>
+        <resourcesPluginVersion>3.3.1</resourcesPluginVersion>
+        <sitePluginVersion>4.0.0-M6</sitePluginVersion>
         <sourcePluginVersion>3.2.1</sourcePluginVersion>
-        <surefirePluginVersion>3.0.0-M7</surefirePluginVersion>
+        <surefirePluginVersion>3.0.0</surefirePluginVersion>
       </properties>
       <build>
         <pluginManagement>
@@ -391,7 +385,7 @@ under the License.
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-invoker-plugin</artifactId>
-              <version>3.4.0</version>
+              <version>3.5.0</version>
               <configuration>
                 <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
                 <preBuildHookScript>setup</preBuildHookScript>

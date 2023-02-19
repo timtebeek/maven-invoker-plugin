@@ -150,7 +150,7 @@ public class InvokerReport extends AbstractMavenReport {
 
         // detail tests table header
         sink.table();
-        sink.tableRows(null, false);
+        sink.tableRows();
 
         sink.tableRow();
         // -------------------------------------------
@@ -193,7 +193,7 @@ public class InvokerReport extends AbstractMavenReport {
         // ------------------------------------------------------------------------
 
         sink.table();
-        sink.tableRows(null, false);
+        sink.tableRows();
 
         sink.tableRow();
 
